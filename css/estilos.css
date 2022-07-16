@@ -70,7 +70,10 @@ ul li a:hover {
 header{
   background-image: url("/img/fundo_site.png");
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
 }
 
 .tamanho_img {
@@ -127,4 +130,13 @@ img{
 
 main{
   background: linear-gradient(-180deg, #fae791, #ffffcc);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(21, 71, 148, 0.8);
+  border-radius: 15px;
 }
