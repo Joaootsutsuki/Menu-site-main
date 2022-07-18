@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2? family= Oswald & family= Radio+Canada:ital,wght@0,300;1,300 & display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 :root {
-  --cor-fundo-botao: rgba(21, 71, 148, 0.8);
-  --fonte: Radio Canada;
+  --cor-fundo-nav: rgba(21, 71, 148, 0.8);
+  --fonte-text: Radio Canada;
+  --fonte-titulo: Nunito, sans-serif;
   --cor-fonte: #000000;
+  --cor-fundo-main: linear-gradient(-180deg, #fae791, #ffffcc);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 
 body {
-  font-family: var(--fonte);
+  font-family: var(--fonte-text);
   color: var(--cor-fonte);
 }
 
@@ -27,7 +29,7 @@ body {
 nav {
   width: 100%;
   float: left;
-  background-color: var(--cor-fundo-botao);
+  background-color: var(--cor-fundo-nav);
   position: absolute;
 }
 
@@ -36,7 +38,7 @@ nav h1 img {
   float: left;
 }
 
-h1 {
+nav h1 {
   float: left;
 }
 
@@ -68,12 +70,10 @@ ul li a:hover {
 }
 
 header{
-  background-image: url("/img/fundo_site.png");
+  background-image: url("../img/fundo_site.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  
-  
+  background-attachment: fixed; 
 }
 
 .tamanho_img {
@@ -121,7 +121,7 @@ img{
 }
 
 #divider{
-  background-image: url("/img/sdv_divider.png");
+  background-image: url("../img/sdv_divider.png");
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,7 +129,16 @@ img{
 }
 
 main{
-  background: linear-gradient(-180deg, #fae791, #ffffcc);
+  background: var(--cor-fundo-main);
+}
+
+.content_title{
+  padding-top: 10px;
+  color: rgb(0, 71, 128);
+  font-family: var(--fonte-titulo);
+  font-size: 40px; 
+  display: block;
+  text-align: center;
 }
 
 ::-webkit-scrollbar{
@@ -137,6 +146,6 @@ main{
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: rgba(21, 71, 148, 0.8);
+  background-color: rgba(21, 80, 170, 0.914);
   border-radius: 15px;
 }
